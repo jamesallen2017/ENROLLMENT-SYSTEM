@@ -1,0 +1,135 @@
+﻿@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<div class="influence-finder">
+    <div class="container-fluid dashboard-content">
+        <!-- ============================================================== -->
+        <!-- pageheader -->
+        <!-- ============================================================== -->
+        <div class="row">
+            <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+                <div class="page-header">
+                    <h3 class="mb-2">Classes Management</h3>
+                    <p class="pageheader-text">Proin placerat ante duiullam scelerisque a velit ac porta, fusce sit amet vestibulum mi. Morbi lobortis pulvinar quam.</p>
+                    <div class="page-breadcrumb">
+                        <nav aria-label="breadcrumb">
+                            <ol class="breadcrumb">
+                                <li class="breadcrumb-item"><a href="#" class="breadcrumb-link">Dashboard</a></li>
+                                <li class="breadcrumb-item active" aria-current="page">Student Application Form</li>
+                            </ol>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+     
+            <form class="needs-validation" novalidate>
+                <div class="row">
+                    <div class="col-xl-3 col-lg-3 col-md-12 col-sm-12 col-12">
+                        <div class="card">
+                            <div class="card-body">
+                                <h3 class="font-16">Teacher</h3>
+                                <select class="form-control">
+                                    <option selected>Select Teacher</option>
+                                    <option>Bill Sicat</option>
+                                    <option>Ryan Opone</option>
+                                    <option>Raissa Cascante</option>
+                                    <option>Leslie Losarito</option>
+                                </select>
+                            </div>
+
+
+                            <div class="card-body border-top">
+                                <h3 class="font-16">Days</h3>
+                                <select class="form-control">
+                                    <option>Select Days</option>
+                                    <option>Monday</option>
+                                    <option>Tuesday</option>
+                                    <option>wednesday</option>
+                                    <option>Thursday</option>
+                                    <option>Friday</option>
+                                </select>
+                            </div>
+
+                            <div class="card-body border-top">
+                                <h3 class="font-16">Time of Class</h3>
+                                <select class="form-control">
+                                    <option selected>Select Time</option>
+                                    <option value="20-30">8:00 - 10:00</option>
+                                    <option value="30-40">11:00 - 12:00</option>
+                                    <option value="40-50">1:00 - 2:00</option>
+                                    <option value="40-50">3:00 - 5:00</option>
+                                </select>
+                            </div>
+
+                            <div class="card-body border-top">
+                                <h3 class="font-16">Subjects</h3>
+                                <select class="form-control">
+                                    <option selected>Select the Subject</option>
+                                    <option value="20-30">English</option>
+                                    <option value="30-40">Math</option>
+                                    <option value="40-50">Science</option>
+                                    <option value="40-50">Pilipino</option>
+                                </select>
+                            </div>
+                            <div class="card-body border-top">
+                                <h3 class="font-16">Grade</h3>
+                                <select class="form-control">
+                                    <option selected>Select Grade</option>
+                                    <option>Grade 1</option>
+                                    <option>Grade 2</option>
+                                    <option>Grade 3</option>
+                                    <option>Grade 4</option>
+                                    <option>Grade 5</option>
+                                </select>
+                            </div>
+                            <div class="card-body border-top">
+                                <a href="#" class="btn btn-secondary btn-lg btn-block">filter</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-xl-9 col-lg-9 col-md-12 col-sm-12 col-12">
+                        <div class="card">
+                            <div class="card-body">
+                                <div id='calendar1'></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </form>
+
+    </div>
+</div>
+<!-- ============================================================== -->
+<!-- end content -->
+<!-- ============================================================== -->
+
+@section scripts {
+
+    <script>
+        $('#form').parsley();
+    </script>
+    <script>
+        // Example starter JavaScript for disabling form submissions if there are invalid fields
+        (function () {
+            'use strict';
+            window.addEventListener('load', function () {
+                // Fetch all the forms we want to apply custom Bootstrap validation styles to
+                var forms = document.getElementsByClassName('needs-validation');
+                // Loop over them and prevent submission
+                var validation = Array.prototype.filter.call(forms, function (form) {
+                    form.addEventListener('submit', function (event) {
+                        if (form.checkValidity() === false) {
+                            event.preventDefault();
+                            event.stopPropagation();
+                        }
+                        form.classList.add('was-validated');
+                    }, false);
+                });
+            }, false);
+        })();
+    </script>
+
+}

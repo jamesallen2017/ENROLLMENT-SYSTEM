@@ -1,0 +1,282 @@
+﻿@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title></title>
+    @Styles.Render("~/Content/css")
+    <style>
+        .wrapper {
+            min-height: 100%;
+            padding-top: 60px;
+            position: relative;
+        }
+        .bg-img {
+            z-index: -1;
+            -webkit-filter: blur(0px);
+            /* Set rules to fill background */
+            min-height: 100%;
+            min-width: 1024px;
+            /* Set up proportionate scaling */
+            width: 100%;
+            height: auto;
+            /* Set up positioning */
+            background-image: url('../../main_assets/img/CSB.jpg');
+            -webkit-background-size: cover;
+            -moz-background-size: cover;
+            -o-background-size: cover;
+            background-size: cover;
+            position: fixed;
+            top: 0;
+            left: 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="bg-img"></div>
+    <section class="banner" id="top">
+        <div class="container">
+            <div class="row">
+                <div style="height: 100%;position: fixed;" class="hidden-xs hidden-sm">
+                    <div class="left-side">
+                        <div class="logo">
+                            <img src="~/main_assets/img/benilde.jpg" alt="Benilde Logo" />
+                        </div>
+                        <div class="tabs-content">
+                            <h4>Choose Your Direction:</h4>
+                            <ul class="social-links">
+                                <li><a href="http://facebook.com" target="_blank">Find us on <em>Facebook</em><i class="fa fa-facebook"></i></a></li>
+                                <li><a href="http://youtube.com" target="_blank">Our <em>YouTube</em> Channel<i class="fa fa-youtube"></i></a></li>
+                                <li><a href="http://instagram.com" target="_blank">Follow our <em>instagram</em><i class="fa fa-instagram"></i></a></li>
+                            </ul>
+                        </div>
+                        @*<div class="page-direction-button">
+                            <a href="@Url.Action("Login","Admin")"><i class="fa fa-phone"></i>Admin Log-in</a>
+                        </div>*@
+                    </div>
+                </div>
+                <div class="col-md-5 col-md-offset-5">
+                    <section id="first-tab-group" class="tabgroup">
+                        <div id="tab1">
+                            <div class="submit-form">
+                                <h4><em>Registration</em>:</h4>
+                                <form id="form-submit" action="/Default/Registration" method="post">
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <fieldset>
+                                                <label for="name">First Name:</label>
+                                                <input type="text" id="firstname" class="form-control" placeholder="First" required>
+                                            </fieldset>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <fieldset>
+                                                <label for="name">Middle Name:</label>
+                                                <input type="text" id="middlename" class="form-control" placeholder="Middle" required>
+                                            </fieldset>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <fieldset>
+                                                <label for="name"> Last Name:</label>
+                                                <input type="text" id="lastname" class="form-control" placeholder="Last" required>
+                                            </fieldset>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <fieldset>
+                                                <label for="name"> Age:</label>
+                                                <input type="text" id="age" class="form-control" placeholder="Age" required>
+                                            </fieldset>
+                                        </div>
+
+                                        <div class="col-md-6">
+                                            <fieldset>
+                                                <label for="departure">Birth date:</label>
+                                                <input name="deparure" type="text" class="form-control date" id="birthdate" placeholder="Select birth date..." required onchange='this.form.()'>
+                                            </fieldset>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <fieldset>
+                                                <label for="paayment">Grade</label>
+                                                <select required name='from' id="Grade">
+                                                    <option value="">Select Grade</option>
+                                                    <option value="Grade 1">Grade 1</option>
+                                                    <option value="Grade 2">Grade 2</option>
+                                                    <option value="Grade 3">Grade 3</option>
+                                                    <option value="Grade 4">Grade 4</option>
+                                                    <option value="Grade 5">Grade 5</option>
+                                                </select>
+                                            </fieldset>
+                                        </div>
+
+                                        <div class="col-md-6">
+                                            <fieldset>
+                                                <label for="discount">Email:</label>
+                                                <input type="text" id="emailaddress" class="form-control" placeholder="Enter Email Address" required>
+                                            </fieldset>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <fieldset>
+                                                <label for="grade">Entry Year</label>
+                                                <input type="text" id="entryyear" class="form-control" placeholder="Enter Entry Year" required>
+                                            </fieldset>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <fieldset>
+                                                <label for="teacher">Mobile Number</label>
+                                                <input type="text" id="MobileNumber" class="form-control" placeholder="Enter Mobile Number" required>
+                                            </fieldset>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <fieldset>
+                                                <label for="teacher">Your City</label>
+                                                <input type="text" id="Location" class="form-control" placeholder="Enter your city" required>
+                                            </fieldset>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="radio-select">
+                                                <div class="row">
+                                                    <div class="col-md-6 col-sm-6 col-xs-6">
+                                                        <label for="round">Male</label>
+                                                        <input type="radio" name="trip" id="Male" value="Male" requiredonchange='this.form.()'>
+                                                    </div>
+                                                    <div class="col-md-6 col-sm-6 col-xs-6">
+                                                        <label for="oneway">Female</label>
+                                                        <input type="radio" name="trip" id="Female" value="Female" requiredonchange='this.form.()'>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <fieldset>
+                                                <button type="submit" id="form-submit" class="btn">Register Now!</button>
+                                            </fieldset>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+            <div class="row">
+                <!--<div class="col-md-12">
+                    <div class="primary-button">
+                        <a href="#" class="scroll-top">Back To Top</a>
+                    </div>
+                </div>-->
+                
+                <div class="col-md-12">
+                    <p>
+                        Powered By:
+                        <a href="http://10.0.0.125:7070/" target="_blank"><em>Archangel Technologies Inc.</em></a>
+                    </p>
+                </div>
+            </div>
+    </footer>
+    @Scripts.Render("~/bundles/jquery")
+</body>
+</html>
+
+<script>
+    $("#form-submit").submit(function (e) {
+
+       var FirstName =  $("#firstname").val();
+       var MiddleName =  $("#middlename").val();
+       var LastName =  $("#lastname").val();
+       var Age = $("#age").val();
+       var EmailAddress = $("#emailaddress").val();
+       var BirthDate =  $("#birthdate").val();
+        var Grade = $("#Grade").val();
+       var EntryYear =  $("#entryyear").val();
+        var MobileNumber = $("#MobileNumber").val();
+        var Location = $("#Location").val();
+        
+       var Gender =  $('input[name="trip"]:checked').val();
+
+        e.preventDefault();
+        e.isImmediatePropagationStopped();
+
+        ActionUrl = $("#form-submit").attr('action');
+
+        $.ajax({
+
+            type: 'POST',
+            url: ActionUrl,
+            data: JSON.stringify({
+                FirstName: FirstName,
+                MiddleName: MiddleName,
+                LastName: LastName,
+                AGe: Age,
+                BirthDate: BirthDate,
+                Grade: Grade,
+                EntryYear: EntryYear,
+                MobileNumber: MobileNumber,
+                Gender: Gender,
+                Location: Location,
+                EmailAddress:EmailAddress,
+            }),
+            contentType: "application/json",
+            dataType: "json",
+            success: function (data) {
+                if (data != "0") {
+                    alert("Successfully registered.")
+                    location.reload;
+                }
+                else {
+                    alert("Please check your information.")
+
+                }
+
+            }   
+        })
+
+
+    })
+</script>
+<script type="text/javascript">
+    $(document).ready(function () {
+
+
+
+        // navigation click actions
+        $('.scroll-link').on('click', function (event) {
+            event.preventDefault();
+            var sectionID = $(this).attr("data-id");
+            scrollToID('#' + sectionID, 750);
+        });
+        // scroll to top action
+        $('.scroll-top').on('click', function (event) {
+            event.preventDefault();
+            $('html, body').animate({ scrollTop: 0 }, 'slow');
+        });
+        // mobile nav toggle
+        $('#nav-toggle').on('click', function (event) {
+            event.preventDefault();
+            $('#main-nav').toggleClass("open");
+        });
+    });
+    // scroll function
+    function scrollToID(id, speed) {
+        var offSet = 0;
+        var targetOffset = $(id).offset().top - offSet;
+        var mainNav = $('#main-nav');
+        $('html,body').animate({ scrollTop: targetOffset }, speed);
+        if (mainNav.hasClass("open")) {
+            mainNav.css("height", "1px").removeClass("in").addClass("collapse");
+            mainNav.removeClass("open");
+        }
+    }
+
+    if (typeof console === "undefined") {
+        console = {
+            log: function () { }
+        };
+    }
+</script>
+

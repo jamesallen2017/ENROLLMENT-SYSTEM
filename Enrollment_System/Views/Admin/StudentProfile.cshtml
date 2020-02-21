@@ -1,0 +1,707 @@
+﻿@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="influence-finder">
+    <div class="container-fluid dashboard-content">
+        <!-- ============================================================== -->
+        <!-- pageheader -->
+        <!-- ============================================================== -->
+        <div class="row">
+            <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+                <div class="page-header">
+                    <h3 class="mb-2">Student Profile </h3>
+                    <p class="pageheader-text">Proin placerat ante duiullam scelerisque a velit ac porta, fusce sit amet vestibulum mi. Morbi lobortis pulvinar quam.</p>
+                    <div class="page-breadcrumb">
+                        <nav aria-label="breadcrumb">
+                            <ol class="breadcrumb">
+                                <li class="breadcrumb-item"><a href="#" class="breadcrumb-link">Dashboard</a></li>
+                                <li class="breadcrumb-item active" aria-current="page">Student Profile</li>
+                            </ol>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- ============================================================== -->
+        <!-- end pageheader -->
+        <!-- ============================================================== -->
+        <!-- content -->
+        <!-- ============================================================== -->
+        <div class="row">
+            <!-- ============================================================== -->
+            <!-- profile -->
+            <!-- ============================================================== -->
+            <div class="col-xl-3 col-lg-3 col-md-12 col-sm-12 col-12">
+                <!-- ============================================================== -->
+                <!-- card profile -->
+                <!-- ============================================================== -->
+                <div class="card">
+                    <div class="card-body">
+                        <div class="user-avatar text-center d-block">
+                            <img src="~/assets/images/male.png" alt="User Avatar" class="rounded-circle user-avatar-xxl">
+                        </div>
+                        <div class="text-center">
+                            <h2 class="font-24 mb-0">Juan Dela Cruz</h2>
+                            <p>Grade 7 Student</p>
+                        </div>
+                    </div>
+                    <div class="card-body border-top">
+                        <h3 class="font-16">Contact Information</h3>
+                        <div class="">
+                            <ul class="list-unstyled mb-0">
+                                <li class="mb-2"><i class="fas fa-fw fa-envelope mr-2"></i>JamesAllenPlata@gmail.com</li>
+                                <li class="mb-0"><i class="fas fa-fw fa-phone mr-2"></i>(900) 123 4567</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="card-body border-top">
+                        <h3 class="font-16">Guardian Information</h3>
+                        <div class="">
+                            <ul class="list-unstyled mb-0">
+                                <li class="mb-2"><i class="fas fa-fw fa-user mr-2"></i>Nadine Lustre</li>
+                                <li class="mb-2"><i class="fas fa-fw fa-envelope mr-2"></i>NadineLustre@gmail.com</li>
+                                <li class="mb-0"><i class="fas fa-fw fa-phone mr-2"></i>(900) 123 4567</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="card-body border-top">
+                        <h3 class="font-16">Requirements</h3>
+                        <div class="">
+                            <ul class="mb-0 list-unstyled">
+                                <li class="mb-1">
+                                    <label class="custom-control custom-checkbox">
+                                        <input type="checkbox" class="custom-control-input" /><span class="custom-control-label">sample Requirement 1</span>
+                                    </label>
+                                </li>
+                                <li class="mb-1">
+                                    <label class="custom-control custom-checkbox">
+                                        <input type="checkbox" class="custom-control-input" /><span class="custom-control-label">sample Requirement 2</span>
+                                    </label>
+                                </li>
+                                <li class="mb-1">
+                                    <label class="custom-control custom-checkbox">
+                                        <input type="checkbox" class="custom-control-input" /><span class="custom-control-label">sample Requirement 3</span>
+                                    </label>
+                                </li>
+                                <li class="mb-1">
+                                    <label class="custom-control custom-checkbox">
+                                        <input type="checkbox" class="custom-control-input" /><span class="custom-control-label">sample Requirement 4</span>
+                                    </label>
+                                </li>
+                                <li class="mb-1">
+                                    <label class="custom-control custom-checkbox">
+                                        <input type="checkbox" class="custom-control-input" /><span class="custom-control-label">sample Requirement 5</span>
+                                    </label>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="card-body border-top">
+                        <h3 class="font-16">Category</h3>
+                        <div>
+                            <a href="#" class="badge badge-light mr-1">Quarterly</a><a href="#" class="badge badge-light mr-1">Cash</a><a href="#" class="badge badge-light mr-1">No Discount</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- ============================================================== -->
+                <!-- end card profile -->
+                <!-- ============================================================== -->
+            </div>
+            <!-- ============================================================== -->
+            <!-- end profile -->
+            <!-- ============================================================== -->
+            <!-- ============================================================== -->
+            <!-- campaign data -->
+            <!-- ============================================================== -->
+            <div class="col-xl-9 col-lg-9 col-md-12 col-sm-12 col-12">
+                <!-- ============================================================== -->
+                <!-- campaign tab one -->
+                <!-- ============================================================== -->
+                <div class="influence-profile-content pills-regular">
+                    <ul class="nav nav-pills mb-3 nav-justified" id="pills-tab" role="tablist">
+                        <li class="nav-item">
+                            <a class="nav-link active" id="pills-campaign-tab" data-toggle="pill" href="#pills-campaign" role="tab" aria-controls="pills-campaign" aria-selected="true">Profile</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" id="pills-payment-tab" data-toggle="pill" href="#pills-payment" role="tab" aria-controls="pills-payment" aria-selected="false">Payment</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" id="pills-teacher-tab" data-toggle="pill" href="#pills-teacher" role="tab" aria-controls="pills-teacher" aria-selected="false">Teacher</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" id="pills-Grades-tab" data-toggle="pill" href="#pills-Grades" role="tab" aria-controls="pills-Grades" aria-selected="false">Grades</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" id="pills-Subject-tab" data-toggle="pill" href="#pills-Subject" role="tab" aria-controls="pills-Subject" aria-selected="false">Subject</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" id="pills-msg-tab" data-toggle="pill" href="#pills-msg" role="tab" aria-controls="pills-msg" aria-selected="false">Message</a>
+                        </li>
+                    </ul>
+                    <div class="tab-content" id="pills-tabContent">
+                        <div class="tab-pane fade show active" id="pills-campaign" role="tabpanel" aria-labelledby="pills-campaign-tab">
+                            <div class="row">
+                                <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+                                    <div class="section-block">
+                                        <h3 class="section-title">Previous Student Records</h3>
+                                    </div>
+                                </div>
+                                <div class="col-xl-4 col-lg-4 col-md-12 col-sm-12 col-12">
+                                    <div class="card">
+                                        <div class="card-body">
+                                            <h1 class="mb-1">9</h1>
+                                            <p>Subjects</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xl-4 col-lg-4 col-md-12 col-sm-12 col-12">
+                                    <div class="card">
+                                        <div class="card-body">
+                                            <h1 class="mb-1">9</h1>
+                                            <p>Passed</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xl-4 col-lg-4 col-md-12 col-sm-12 col-12">
+                                    <div class="card">
+                                        <div class="card-body">
+                                            <h1 class="mb-1">0</h1>
+                                            <p>Failed</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="section-block">
+                                <h3 class="section-title">Historical Records</h3>
+                            </div>
+                            <div class="row">
+                                <!-- ============================================================== -->
+                                <!-- data table rowgroup  -->
+                                <!-- ============================================================== -->
+                                <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+                                    <div class="card">
+
+                                        <div class="card-body">
+                                            <div class="row">
+                                                <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+                                                    <div class="media influencer-profile-data d-flex align-items-center p-2">
+                                                        <div class="mr-4">
+                                                            <img src="~/assets/images/slack.png" alt="User Avatar" class="user-avatar-lg">
+                                                        </div>
+                                                        <div class="media-body ">
+                                                            <div class="influencer-profile-data">
+                                                                <h3 class="m-b-10">Enrollment Payment</h3>
+                                                                <p>
+                                                                    <span class="m-r-20 d-inline-block">
+                                                                        Endcoded Date
+                                                                        <span class="m-l-10 text-primary">10/05/2019</span>
+                                                                    </span>
+                                                                    <span class="m-r-20 d-inline-block">
+                                                                        Balance Credit
+                                                                        <span class="m-l-10 text-secondary">0.00</span>
+                                                                    </span>
+                                                                    <span class="m-r-20 d-inline-block">
+                                                                        Due Date <span class="m-l-10  text-info">11/05/2019</span>
+                                                                    </span>
+                                                                </p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="table-responsive">
+                                                <table id="example" class="table table-striped table-bordered second" style="width:100%">
+                                                    <thead>
+                                                        <tr>
+                                                            <th>Receipt No.</th>
+                                                            <th>Invoice No.</th>
+                                                            <th>School Year</th>
+                                                            <th>Grade</th>
+                                                            <th>Fee</th>
+                                                            <th>Credit Balance</th>
+                                                            <th>Paid Date</th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+
+                                                        <tr>
+                                                            <td>2017-001</td>
+                                                            <td>000-001</td>
+                                                            <td>2017-2018</td>
+                                                            <td>4</td>
+                                                            <td>6,000</td>
+                                                            <td>26,000</td>
+                                                            <td>07/05/2017</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>2017-002</td>
+                                                            <td>000-001</td>
+                                                            <td>2017-2018</td>
+                                                            <td>4</td>
+                                                            <td>6,000</td>
+                                                            <td>20,000</td>
+                                                            <td>10/05/2017</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>2017-003</td>
+                                                            <td>000-001</td>
+                                                            <td>2017-2018</td>
+                                                            <td>4</td>
+                                                            <td>20,000</td>
+                                                            <td>0.00</td>
+                                                            <td>01/05/2018</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>2018-001</td>
+                                                            <td>000-001</td>
+                                                            <td>2018-2019</td>
+                                                            <td>5</td>
+                                                            <td>32,000</td>
+                                                            <td>0.00</td>
+                                                            <td>07/05/2018</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>2019-001</td>
+                                                            <td>000-001</td>
+                                                            <td>2019-2020</td>
+                                                            <td>6</td>
+                                                            <td>10,000</td>
+                                                            <td>22,000</td>
+                                                            <td>07/05/2019</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>2019-002</td>
+                                                            <td>000-001</td>
+                                                            <td>2019-2020</td>
+                                                            <td>6</td>
+                                                            <td>12,000</td>
+                                                            <td>0.00</td>
+                                                            <td>10/05/2019</td>
+                                                        </tr>
+                                                    </tbody>
+                                                    <tfoot>
+                                                        <tr>
+                                                            <th>Receipt No.</th>
+                                                            <th>Invoice No.</th>
+                                                            <th>School Year</th>
+                                                            <th>Grade</th>
+                                                            <th>Fee</th>
+                                                            <th>Credit Balance</th>
+                                                            <th>Paid Date</th>
+                                                        </tr>
+                                                    </tfoot>
+                                                </table>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- ============================================================== -->
+                                <!-- end data table rowgroup  -->
+                                <!-- ============================================================== -->
+                            </div>
+                        </div>
+
+                        <div class="tab-pane fade" id="pills-payment" role="tabpanel" aria-labelledby="pills-payment-tab">
+                            <div class="card">
+                                <h5 class="card-header">Payment Process</h5>
+                                <div class="card-body">
+                                    <form class="needs-validation" id="tablePayment" novalidate>
+                                        <div class="form-row">
+                                            <div class="table-responsive">
+                                                <table id="tablePaymentUI" class="table table-striped table-bordered" style="width:100%">
+                                                    <thead>
+                                                        <tr>
+                                                            <th>Action</th>
+                                                            <th>Fee Type</th>
+                                                            <th>Description</th>
+                                                            <th>Unit Cost</th>
+                                                            <th>Total</th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+
+                                                        <tr>
+                                                            <td></td>
+                                                            <td>Tuition Fee</td>
+                                                            <td>Tuition Fee</td>
+                                                            <td><input type="text" class="form-control" id="test" required /></td>
+                                                            <td><input type="text" class="form-control" disabled /></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td></td>
+                                                            <td>miscellaneous</td>
+                                                            <td>miscellaneous</td>
+                                                            <td><input type="text" class="form-control" required /></td>
+                                                            <td><input type="text" class="form-control" disabled /></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td><a href="#" class="btn btn-danger"><i class="fa fa-trash"></i></a> <a href="#" class="btn btn-success"><i class="fa fa-plus"></i></a></td>
+                                                            <td><input type="text" class="form-control" required /></td>
+                                                            <td><input type="text" class="form-control" required /></td>
+                                                            <td><input type="text" class="form-control" required /></td>
+                                                            <td><input type="text" class="form-control" disabled /></td>
+                                                        </tr>
+                                                    </tbody>
+                                                    <tfoot>
+                                                        <tr>
+                                                            <th></th>
+                                                            <th></th>
+                                                            <th></th>
+                                                            <th>Sub Total</th>
+                                                            <th></th>
+                                                        </tr>
+                                                        <tr>
+                                                            <th></th>
+                                                            <th></th>
+                                                            <th></th>
+                                                            <th>Discount(20%)</th>
+                                                            <th></th>
+                                                        </tr>
+                                                        <tr>
+                                                            <th></th>
+                                                            <th></th>
+                                                            <th></th>
+                                                            <th>VAT(10%)</th>
+                                                            <th></th>
+                                                        </tr>
+                                                        <tr>
+                                                            <th></th>
+                                                            <th></th>
+                                                            <th></th>
+                                                            <th>Grand Total</th>
+                                                            <th></th>
+                                                        </tr>
+                                                    </tfoot>
+                                                </table>
+                                            </div>
+                                        </div>
+                                        <br />
+                                        <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12 ">
+                                            <button type="submit" class="btn btn-primary btn-sm float-right m-l-10">Save</button>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="tab-pane fade" id="pills-teacher" role="tabpanel" aria-labelledby="pills-teacher-tab">
+                            <div class="card">
+                                <h5 class="card-header">Teacher</h5>
+                                <div class="card-body">
+                                    <div class="table-responsive">
+                                        <table id="example" class="table table-striped table-bordered second" style="width:100%">
+                                            <thead>
+                                                <tr>
+                                                    <th>Teacher ID.</th>
+                                                    <th>Teacher Name</th>
+                                                    <th>Subject</th>
+                                                    <th>SY</th>
+                                                    <th>Date</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+
+                                                <tr>
+                                                    <td>23092384</td>
+                                                    <td>Bill Sicat</td>
+                                                    <td>English</td>
+                                                    <td>2019-2020</td>
+                                                    <td>07/05/2019</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>23092384</td>
+                                                    <td>Bill Sicat</td>
+                                                    <td>English</td>
+                                                    <td>2018-2019</td>
+                                                    <td>07/05/2018</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>23092773</td>
+                                                    <td>Leslie Losarito</td>
+                                                    <td>Math</td>
+                                                    <td>2019-2020</td>
+                                                    <td>07/05/2019</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>23092773</td>
+                                                    <td>Leslie Losarito</td>
+                                                    <td>Math</td>
+                                                    <td>2018-2019</td>
+                                                    <td>07/05/2018</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>23092624</td>
+                                                    <td>Ryan Opone</td>
+                                                    <td>Science</td>
+                                                    <td>2019-2020</td>
+                                                    <td>07/05/2019</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>23092624</td>
+                                                    <td>Ryan Opone</td>
+                                                    <td>Science</td>
+                                                    <td>2018-2019</td>
+                                                    <td>07/05/2018</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>23092388</td>
+                                                    <td>Raissa Cascante</td>
+                                                    <td>Pilipino</td>
+                                                    <td>2019-2020</td>
+                                                    <td>07/05/2019</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>23092388</td>
+                                                    <td>Raissa Cascante</td>
+                                                    <td>Pilipino</td>
+                                                    <td>2018-2019</td>
+                                                    <td>07/05/2018</td>
+                                                </tr>
+                                            </tbody>
+                                            <tfoot>
+                                                <tr>
+                                                    <th>Teacher ID.</th>
+                                                    <th>Teacher Name</th>
+                                                    <th>Subject</th>
+                                                    <th>SY</th>
+                                                    <th>Date</th>
+                                                </tr>
+                                            </tfoot>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="tab-pane fade" id="pills-Grades" role="tabpanel" aria-labelledby="pills-Grades-tab">
+                            <div class="card">
+                                <h5 class="card-header">Grades</h5>
+                                <div class="card-body">
+                                    <div class="table-responsive">
+                                        <table id="example" class="table table-striped table-bordered second" style="width:100%">
+                                            <thead>
+                                                <tr>
+                                                    <th>Subject Code</th>
+                                                    <th>Grades</th>
+                                                    <th>Subject Name</th>
+                                                    <th>SY</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+
+                                                <tr>
+                                                    <td>ENG-101</td>
+                                                    <td>70</td>
+                                                    <td>English</td>
+                                                    <td>2019-2020</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>ENG-100</td>
+                                                    <td>80</td>
+                                                    <td>English</td>
+                                                    <td>2018-2019</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>MATH-101</td>
+                                                    <td>75</td>
+                                                    <td>Math</td>
+                                                    <td>2019-2020</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>MATH-100</td>
+                                                    <td>82</td>
+                                                    <td>Math</td>
+                                                    <td>07/05/2018</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>SCI-101</td>
+                                                    <td>81</td>
+                                                    <td>Science</td>
+                                                    <td>07/05/2019</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>SCI-100</td>
+                                                    <td>86</td>
+                                                    <td>Science</td>
+                                                    <td>2018-2019</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>PIL-101</td>
+                                                    <td>90</td>
+                                                    <td>Pilipino</td>
+                                                    <td>2019-2020</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>PIL-100</td>
+                                                    <td>92</td>
+                                                    <td>Pilipino</td>
+                                                    <td>2018-2019</td>
+                                                </tr>
+                                            </tbody>
+                                            <tfoot>
+                                                <tr>
+                                                    <th>Subject Code</th>
+                                                    <th>Grades</th>
+                                                    <th>Subject Name</th>
+                                                    <th>SY</th>
+                                                </tr>
+                                            </tfoot>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="tab-pane fade" id="pills-Subject" role="tabpanel" aria-labelledby="pills-Subject-tab">
+                            <div class="card">
+                                <h5 class="card-header">Subject</h5>
+                                <div class="card-body">
+                                    <div class="table-responsive">
+                                        <table id="example" class="table table-striped table-bordered second" style="width:100%">
+                                            <thead>
+                                                <tr>
+                                                    <th>Subject Code</th>
+                                                    <th>Subject Name</th>
+                                                    <th>Time</th>
+                                                    <th>SY</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+
+                                                <tr>
+                                                    <td>ENG-101</td>
+                                                    <td>English</td>
+                                                    <td>10:00 - 12:00</td>
+                                                    <td>2019-2020</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>ENG-100</td>
+                                                    <td>English</td>
+                                                    <td>8:00 - 10:00</td>
+                                                    <td>2018-2019</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>MATH-101</td>
+                                                    <td>Math</td>
+                                                    <td>8:00 - 10:00</td>
+                                                    <td>2019-2020</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>MATH-100</td>
+                                                    <td>Math</td>
+                                                    <td>10:00 - 12:00</td>
+                                                    <td>07/05/2018</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>SCI-101</td>
+                                                    <td>Science</td>
+                                                    <td>1:00 - 2:00</td>
+                                                    <td>07/05/2019</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>SCI-100</td>
+                                                    <td>Science</td>
+                                                    <td>2:00 - 3:00</td>
+                                                    <td>2018-2019</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>PIL-101</td>
+                                                    <td>Pilipino</td>
+                                                    <td>2:00 - 3:00</td>
+                                                    <td>2019-2020</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>PIL-100</td>
+                                                    <td>Pilipino</td>
+                                                    <td>1:00 - 2:00</td>
+                                                    <td>2018-2019</td>
+                                                </tr>
+                                            </tbody>
+                                            <tfoot>
+                                                <tr>
+                                                    <th>Subject Code</th>
+                                                    <th>Subject Name</th>
+                                                    <th>Time</th>
+                                                    <th>SY</th>
+                                                </tr>
+                                            </tfoot>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="tab-pane fade" id="pills-msg" role="tabpanel" aria-labelledby="pills-msg-tab">
+                            <div class="card">
+                                <h5 class="card-header">Send Messages</h5>
+                                <div class="card-body">
+                                    <form>
+                                        <div class="row">
+                                            <div class="offset-xl-3 col-xl-6 offset-lg-3 col-lg-3 col-md-12 col-sm-12 col-12 p-4">
+                                                <div class="form-group">
+                                                    <label for="name">Your Name</label>
+                                                    <input type="text" class="form-control form-control-lg" id="name" placeholder="">
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="email">Your Email</label>
+                                                    <input type="email" class="form-control form-control-lg" id="email" placeholder="">
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="subject">Subject</label>
+                                                    <input type="text" class="form-control form-control-lg" id="subject" placeholder="">
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="messages">Messgaes</label>
+                                                    <textarea class="form-control" id="messages" rows="3"></textarea>
+                                                </div>
+                                                <button type="submit" class="btn btn-primary float-right">Send Message</button>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- ============================================================== -->
+                <!-- end campaign tab one -->
+                <!-- ============================================================== -->
+            </div>
+            <!-- ============================================================== -->
+            <!-- end campaign data -->
+            <!-- ============================================================== -->
+        </div>
+    </div>
+</div>
+<!-- ============================================================== -->
+<!-- end content -->
+<!-- ============================================================== -->
+
+
+@section scripts{
+    <script>
+        $('#form').parsley();
+    </script>
+    <script>
+        // Example starter JavaScript for disabling form submissions if there are invalid fields
+        (function () {
+            'use strict';
+            window.addEventListener('load', function () {
+                // Fetch all the forms we want to apply custom Bootstrap validation styles to
+                var forms = document.getElementsByClassName('needs-validation');
+                // Loop over them and prevent submission
+                var validation = Array.prototype.filter.call(forms, function (form) {
+                    form.addEventListener('submit', function (event) {
+                        if (form.checkValidity() === false) {
+                            event.preventDefault();
+                            event.stopPropagation();
+                        }
+                        form.classList.add('was-validated');
+                    }, false);
+                });
+            }, false);
+        })();
+    </script>
+}

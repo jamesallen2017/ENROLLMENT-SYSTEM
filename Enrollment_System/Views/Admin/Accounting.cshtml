@@ -1,0 +1,229 @@
+﻿@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+<div class="influence-finder">
+    <div class="container-fluid dashboard-content">
+        <!-- ============================================================== -->
+        <!-- pageheader -->
+        <!-- ============================================================== -->
+        <div class="row">
+            <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+                <div class="page-header">
+                    <h3 class="mb-2">Accounting</h3>
+                    <p class="pageheader-text">Proin placerat ante duiullam scelerisque a velit ac porta, fusce sit amet vestibulum mi. Morbi lobortis pulvinar quam.</p>
+                    <div class="page-breadcrumb">
+                        <nav aria-label="breadcrumb">
+                            <ol class="breadcrumb">
+                                <li class="breadcrumb-item"><a href="#" class="breadcrumb-link">Dashboard</a></li>
+                                <li class="breadcrumb-item active" aria-current="page">Accounting</li>
+                            </ol>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- ============================================================== -->
+        <!-- end pageheader -->
+        <!-- ============================================================== -->
+        <!-- content -->
+        <!-- ============================================================== -->
+        @if (ViewBag.Accounting == "true")
+        {
+            <div class="row">
+                <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+                    <div class="card">
+                        <div class="card-body">
+                            <div class="table-responsive">
+                                <table id="example2" class="table table-striped table-bordered dataTable" style="width:100%">
+                                    <thead>
+                                        <tr>
+                                            <th>Student ID</th>
+                                            <th>Student Name</th>
+                                            <th>Grade</th>
+                                            <th>School Year</th>
+                                            <th>Fee</th>
+                                            <th>Credit Balance</th>
+                                            <th>Last Paid Date</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+
+                                        <tr>
+                                            <td><a href="#">20159202</a></td>
+                                            <td>Allen James Plata</td>
+                                            <td>Grade 4</td>
+                                            <td>2017-2018</td>
+                                            <td>6,000</td>
+                                            <td>26,000</td>
+                                            <td>07/05/2017</td>
+                                        </tr>
+                                        <tr>
+                                            <td><a href="@Url.Action("GetPaymentDetails","Admin")">20159223</a></td>
+                                            <td>Juan Dela Cruz</td>
+                                            <td>Grade 4</td>
+                                            <td>2017-2018</td>
+                                            <td>20,000</td>
+                                            <td>10,000</td>
+                                            <td>10/05/2017</td>
+                                        </tr>
+                                        <tr>
+                                            <td><a href="#">20159252</a></td>
+                                            <td>Fernardo Lapuz</td>
+                                            <td>Grade 4</td>
+                                            <td>2018-2019</td>
+                                            <td>20,000</td>
+                                            <td>0.00</td>
+                                            <td>01/05/2018</td>
+                                        </tr>
+                                        <tr>
+                                            <td><a href="#">20159255</a></td>
+                                            <td>Alfred Yap</td>
+                                            <td>Grade 5</td>
+                                            <td>2018-2019</td>
+                                            <td>32,000</td>
+                                            <td>0.00</td>
+                                            <td>07/05/2018</td>
+                                        </tr>
+                                        <tr>
+                                            <td><a href="#">20159252</a></td>
+                                            <td>Roven Cipriano</td>
+                                            <td>Grade 6</td>
+                                            <td>2019-2020</td>
+                                            <td>10,000</td>
+                                            <td>22,000</td>
+                                            <td>07/05/2019</td>
+                                        </tr>
+                                        <tr>
+                                            <td><a href="#">20159222</a></td>
+                                            <td>Crezalin yap</td>
+                                            <td>Grade 6</td>
+                                            <td>2019-2020</td>
+                                            <td>12,000</td>
+                                            <td>0.00</td>
+                                            <td>10/05/2019</td>
+                                        </tr>
+                                    </tbody>
+                                    <tfoot>
+                                        <tr>
+                                            <th>Receipt No.</th>
+                                            <th>Invoice No.</th>
+                                            <th>Grade</th>
+                                            <th>School Year</th>
+                                            <th>Fee</th>
+                                            <th>Credit Balance</th>
+                                            <th>Paid Date</th>
+                                        </tr>
+                                    </tfoot>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        }
+
+        else
+        {
+            <div class="row">
+                <div class="offset-xl-2 col-xl-8 col-lg-12 col-md-12 col-sm-12 col-12">
+                    <div class="card">
+                        <div class="card-header p-4">
+                            <a class="pt-2 d-inline-block" href="index.html">Anual</a>
+
+                            <div class="float-right">
+                                <h3 class="mb-0">Invoice #1</h3>
+                                Date: 3 Dec, 2020
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <div class="row mb-4">
+                                <div class="col-sm-6">
+                                    <h5 class="mb-3">To:</h5>
+                                    <h3 class="text-dark mb-1">Juan Dela Cruz</h3>
+                                    <div>ID No: 20159223</div>
+                                    <div>Grade 7</div>
+                                    <div>SY: 2019-2020</div>
+                                    <div>Email: juandelacruz@gmail.com</div>
+                                    <div>Phone: +614-837-8483</div>
+                                </div>
+                            </div>
+                            <div class="table-responsive-sm">
+                                <table class="table table-striped">
+                                    <thead>
+                                        <tr>
+                                            <th>Description</th>
+                                            <th class="right">Balance</th>
+                                            <th class="right">Unit Cost</th>
+                                            <th class="right">Total</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td class="left strong">Tuition Fee</td>
+                                            <td class="left">20,00.00</td>
+                                            <td class="right"><input type="text" class="form-control" id="test" required /></td>
+                                            <td class="right"><input type="text" class="form-control" id="test" disabled /></td>
+                                        </tr>
+                                        <tr>
+                                            <td class="left strong">Credit Balance</td>
+                                            <td class="left">10,000.00</td>
+                                            <td class="right"><input type="text" class="form-control" id="test" required /></td>
+                                            <td class="right"><input type="text" class="form-control" id="test" disabled /></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <div class="row">
+                                <div class="col-lg-4 col-sm-5">
+                                </div>
+                                <div class="col-lg-4 col-sm-5 ml-auto">
+                                    <table class="table table-clear">
+                                        <tbody>
+                                            <tr>
+                                                <td class="left">
+                                                    <strong class="text-dark">Subtotal</strong>
+                                                </td>
+                                                <td class="right">$28,809,00</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="left">
+                                                    <strong class="text-dark">Discount (20%)</strong>
+                                                </td>
+                                                <td class="right">$5,761,00</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="left">
+                                                    <strong class="text-dark">VAT (10%)</strong>
+                                                </td>
+                                                <td class="right">$2,304,00</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="left">
+                                                    <strong class="text-dark">Total</strong>
+                                                </td>
+                                                <td class="right">
+                                                    <strong class="text-dark">$20,744,00</strong>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-footer bg-white">
+                            <p class="mb-0">2983 Glenview Drive Corpus Christi, TX 78476</p>
+                        </div>
+                        <a href="#" class="btn btn-dark btn-block">Preview</a>
+                        <a href="#" class="btn btn-brand btn-block">Print</a>
+                    </div>
+
+                </div>
+            </div>
+        }
+
+
+    </div>
+</div>

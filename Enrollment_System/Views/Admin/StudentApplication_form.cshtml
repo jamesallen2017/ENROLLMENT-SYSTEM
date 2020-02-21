@@ -1,0 +1,292 @@
+﻿@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="influence-finder">
+    <div class="container-fluid dashboard-content">
+        <!-- ============================================================== -->
+        <!-- pageheader -->
+        <!-- ============================================================== -->
+        <div class="row">
+            <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+                <div class="page-header">
+                    <h3 class="mb-2">Student Application Form </h3>
+                    <p class="pageheader-text">Proin placerat ante duiullam scelerisque a velit ac porta, fusce sit amet vestibulum mi. Morbi lobortis pulvinar quam.</p>
+                    <div class="page-breadcrumb">
+                        <nav aria-label="breadcrumb">
+                            <ol class="breadcrumb">
+                                <li class="breadcrumb-item"><a href="#" class="breadcrumb-link">Dashboard</a></li>
+                                <li class="breadcrumb-item active" aria-current="page">Student Application Form</li>
+                            </ol>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- ============================================================== -->
+        <!-- end pageheader -->
+        <!-- ============================================================== -->
+        <!-- content -->
+        <!-- ============================================================== -->
+        <form class="needs-validation" novalidate>
+
+            <div class="row">
+                <!-- ============================================================== -->
+                <!-- validation form -->
+                <!-- ============================================================== -->
+                <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+                    <div class="card">
+                        <h5 class="card-header">Student Information</h5>
+                        <div class="card-body">
+                            <div class="form-row">
+                                <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 col-12">
+                                    <div class="form-group">
+                                        <input type="text" class="form-control" id="validationCustom01" placeholder="First name" required>
+                                        <div class="invalid-feedback">
+                                            Please provide First name.
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 col-12">
+                                    <div class="form-group">
+                                        <input type="text" class="form-control" id="validationCustom01" placeholder="Middle name">
+                                    </div>
+                                </div>
+
+                                <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 col-12">
+                                    <div class="form-group">
+                                        <input type="text" class="form-control" id="validationCustom01" placeholder="Last name" required>
+                                        <div class="invalid-feedback">
+                                            Please provide Last name.
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                                <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 col-12">
+                                    <div class="form-group">
+                                        <input type="text" class="form-control" id="validationCustom01" placeholder="Age" required>
+                                        <div class="invalid-feedback">
+                                            Please provide age.
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 col-12">
+                                    <div class="form-group">
+                                        <input type="text" class="form-control" id="validationCustom01" placeholder="Birth date" required>
+                                        <div class="invalid-feedback">
+                                            Please provide a valid birth date.
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 col-12">
+                                    <div class="form-group">
+                                        <input type="text" class="form-control" id="validationCustom01" placeholder="Birth place" required>
+                                        <div class="invalid-feedback">
+                                            Please provide a valid birth place.
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-xl-3 col-lg-3 col-md-3 col-sm-12 col-12">
+                                    <div class="form-group">
+                                        <select required name='Gender' class="form-control" id="Gender">
+                                            <option value="">Select Gender</option>
+                                            <option value="Male">Male</option>
+                                            <option value="Female">Female</option>
+                                        </select>
+                                        <div class="invalid-feedback">
+                                            Please select a Gender
+                                        </div>
+                                    </div>
+                                    </div>
+
+                                    <div class="col-xl-3 col-lg-3 col-md-3 col-sm-12 col-12">
+                                        <div class="form-group">
+                                            <input type="text" class="form-control" id="validationCustom01" placeholder="Contact No" required>
+                                            <div class="invalid-feedback">
+                                                Please provide a contact No.
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-xl-3 col-lg-3 col-md-3 col-sm-12 col-12">
+                                            <div class="form-group">
+                                                <select required name='from' class="form-control" id="semester">
+                                                    <option value="">Select Grade</option>
+                                                    <option value="Grade 1">Grade 1</option>
+                                                    <option value="Grade 2">Grade 2</option>
+                                                    <option value="Grade 3">Grade 3</option>
+                                                    <option value="Grade 4">Grade 4</option>
+                                                    <option value="Grade 5">Grade 5</option>
+                                                </select>
+                                                <div class="invalid-feedback">
+                                                    Please select a grade
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-xl-3 col-lg-3 col-md-3 col-sm-12 col-12">
+                                                <div class="form-group">
+                                                    <input type="text" class="form-control" id="validationCustom01" placeholder="Entry Year" required>
+                                                    <div class="invalid-feedback">
+                                                        Please provide a entry year
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12 ">
+                                                <div class="form-group">
+                                                    <input type="text" class="form-control" id="validationCustom01" placeholder="Address" required>
+                                                    <div class="invalid-feedback">
+                                                        Please provide a current address.
+                                                    </div>
+                                                </div>
+                                            </div>
+
+
+                                            <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12 ">
+                                                <div class="form-group">
+                                                    <input type="text" class="form-control" id="validationCustom01" placeholder="Email Address" required>
+                                                    <div class="invalid-feedback">
+                                                        Please provide a valid email.
+                                                    </div>
+                                                </div>
+                                            </div>
+
+
+
+                                        </div>
+                                        <div class="form-row">
+                                            <div class="col-xl-4 col-lg-4 col-md-12 col-sm-12 col-12 mb-2">
+                                                <div class="form-group">
+                                                    <input type="text" class="form-control" id="validationCustom03" placeholder="City" required>
+                                                    <div class="invalid-feedback">
+                                                        Please provide a valid city.
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-xl-4 col-lg-4 col-md-12 col-sm-12 col-12 mb-2">
+                                                <div class="form-group">
+                                                    <input type="text" class="form-control" id="validationCustom04" placeholder="State" required>
+                                                    <div class="invalid-feedback">
+                                                        Please provide a valid state.
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-xl-4 col-lg-4 col-md-12 col-sm-12 col-12 mb-2">
+                                                <div class="form-group">
+                                                    <input type="text" class="form-control" id="validationCustom05" placeholder="Zipcode" required>
+                                                    <div class="invalid-feedback">
+                                                        Please provide a valid zipcode.
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                            </div>
+                </div>
+                <!-- ============================================================== -->
+                <!-- end validation form -->
+                <!-- ============================================================== -->
+            </div>
+
+            <div class="row">
+                <!-- ============================================================== -->
+                <!-- validation form -->
+                <!-- ============================================================== -->
+                <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+                    <div class="card">
+                        <h5 class="card-header">Guardian Information</h5>
+                        <div class="card-body">
+                            <div class="form-row">
+                                <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 col-12">
+                                    <div class="form-group">
+                                        <input type="text" class="form-control" id="validationCustom01" placeholder="First name" required>
+                                        <div class="invalid-feedback">
+                                            Please provide First name.
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 col-12">
+                                    <div class="form-group">
+                                        <input type="text" class="form-control" id="validationCustom01" placeholder="Middle name">
+                                    </div>
+                                </div>
+
+                                <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 col-12">
+                                    <div class="form-group">
+                                        <input type="text" class="form-control" id="validationCustom01" placeholder="Last name" required>
+                                        <div class="invalid-feedback">
+                                            Please provide Last name.
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                                <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12 ">
+                                    <div class="form-group">
+                                        <input type="text" class="form-control" id="validationCustom01" placeholder="Contact No." required>
+                                        <div class="invalid-feedback">
+                                            Please provide a valid contact No.
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12 ">
+                                    <div class="form-group">
+                                        <input type="text" class="form-control" id="validationCustom01" placeholder="Email Address" required>
+                                        <div class="invalid-feedback">
+                                            Please provide a valid email.
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12 ">
+                                    <button class="btn btn-primary" type="submit">Submit form</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                </div>
+        </form>
+
+        <!-- ============================================================== -->
+        <!-- end validation form -->
+        <!-- ============================================================== -->
+    </div>
+</div>
+<!-- ============================================================== -->
+<!-- end content -->
+<!-- ============================================================== -->
+
+@section scripts {
+
+    <script>
+        $('#form').parsley();
+    </script>
+    <script>
+        // Example starter JavaScript for disabling form submissions if there are invalid fields
+        (function () {
+            'use strict';
+            window.addEventListener('load', function () {
+                // Fetch all the forms we want to apply custom Bootstrap validation styles to
+                var forms = document.getElementsByClassName('needs-validation');
+                // Loop over them and prevent submission
+                var validation = Array.prototype.filter.call(forms, function (form) {
+                    form.addEventListener('submit', function (event) {
+                        if (form.checkValidity() === false) {
+                            event.preventDefault();
+                            event.stopPropagation();
+                        }
+                        form.classList.add('was-validated');
+                    }, false);
+                });
+            }, false);
+        })();
+    </script>
+
+}
